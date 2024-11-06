@@ -1,6 +1,12 @@
-<?php 
+<?php
 include "header.php";
 include "slider.php";
+
+require 'config.php';
+require 'function.php';
+$db = new Database();
+$conn = $db->getConnection();
+
 ?>
 
     <!-- Featured News Slider Start -->
